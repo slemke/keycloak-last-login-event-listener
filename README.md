@@ -20,7 +20,7 @@ The listener currently supports three configuration properties:
 
 **Example**
 ```shell
-    --spi-events-listener-last-login-attribute=last_login
-    --spi-events-listener-last-login-zone-id=America/Los_Angeles
-    --spi-events-listener-last-login-pattern=dd.MM.yyyy
+--spi-events-listener-last-login-attribute=last_login
+--spi-events-listener-last-login-zone-id=America/Los_Angeles
+--spi-events-listener-last-login-pattern=dd.MM.yyyy
 ```
