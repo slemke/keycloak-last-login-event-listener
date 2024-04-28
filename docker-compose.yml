@@ -1,0 +1,17 @@
+version: '3.3'
+
+services:
+  keycloak:
+    image: quay.io/keycloak/keycloak:latest
+    build: .
+    ports:
+      - "8080:8080"
+    environment:
+      - KEYCLOAK_ADMIN=admin
+      - KEYCLOAK_ADMIN_PASSWORD=admin
+    command:
+      - start-dev
+      - --spi-events-listener-last-login-attribute=last_login
+      - --spi-events-listener-last-login-zone-id=America/Los_Angeles
+    volumes:
+      - ./build/libs:/opt/keycloak/providers
