@@ -1,4 +1,4 @@
-package io.github.slemke.gdpr;
+package io.github.slemke.login;
 
 import java.time.DateTimeException;
 import java.time.ZoneId;
